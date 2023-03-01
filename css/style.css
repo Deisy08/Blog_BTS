@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+/*fondo y espacio cuerpo */
+.caja{ 
+    background: url(../img/fondo_principal.jpg);
+    background-color: #cdd8da;
+    overflow: hidden;
+}
+
+.caja__contenedor{
+    font-family: 'Lato', sans-serif;
+    width: 1100px;
+    margin: 10px auto;
+    background: url(../img/fondo_contenedor.webp);
+    background-color: #FFFFFF;
+    border-radius: 45px;
+}
+
+.imagen__norepeat{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parametro__contenedor{
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.parametro__contenedor__contenido--principal{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*etiquetas*/
+em{
+    font-style: italic;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+    color: #312c5e;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #123196;
+    text-decoration: underline;
+}
+
+/*dentro de caja*/
+
+.titulo{
+    font-size: 100px;
+    font-family: fantasy;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto;
+    text-shadow: -0.1em -0.1em #333;
+}
+
+
+.titulo__h3{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin: 15px auto;
+}
+
+/*subcaja*/
+
+.ul__items-ul{
+    margin-right: 5rem;
+}
+.ul__items__contenedor{
+    display: flex;
+}
+.ul__items{
+    font-weight: bold;
+    margin: 9px auto;
+    margin-left: 25px;
+    font-size: 18px;
+    color: rgb(36, 29, 29);
+}
+
+.ul__items-nombres{
+    margin-left: 40px;
+}
+
+.ul__items-nombres::before{
+    content: "⤳ ";
+}
+
+.ul__items-nombres--bt21{
+    margin-left: 40px;
+}
+
+.ul__items-nombres--bt21::before{
+    content: "✧ ";
+}
+
+.ul__items-imagen{
+    width: 30rem;
+    height: 26rem;
+    margin: 0 20px 15px 15px;
+    border-radius: 10px;
+}
+
+.ul__items-imagen:hover{
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px rgb(100, 32, 155);
+}
+
+
+.ul__items-nombres--info{
+    text-align: center;
+}
+
+.contenedor__conimagen{
+    position: relative;
+    text-align: left;
+    display: inline-block;
+}
+
+.contenedor__conimagen--imagen{
+    border-radius: 0 60px 0 60px;
+    width: 800px;
+    height: 1200px;
+    margin: 0 50px;
+}
+
+#contenedor__conimagen-parrafo{
+    padding: 30px 85px 15px 40px;
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 35px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.8px;
+}
+
+#contenedor__conimagen-parrafo p{
+    font-size: 17px;
+}
+/*boton like 1*/
+
+.botones__contenedor{
+    height: 4rem;
+}
+
+.btn-input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: #8a8484e7;
+}
+
+.heart-btn-content:active .btn-input{
+    color: #e04141;
+    text-shadow: 2px 2px 3px #972121;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.heart-btn{
+    position: relative;
+    top: 40px;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+}
+
+.heart-btn-content{
+    padding: 13px 26px;
+    display: flex;
+    cursor: pointer;
+    border: 2px solid #eae2e1;
+    border-radius: 45px;
+    width: 35%;
+    align-items: center;
+}
+
+.heart-btn-content.heart-active{
+    border-color: #f9b9c4;
+    background: #fbd0d8;
+}
+
+.heart{
+    position: absolute;
+    background: url(../img/img.png) no-repeat;
+    background-position: left;
+    background-size: 2900%;
+    height: 80px;
+    width: 90px;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%,-50%);
+}
+
+.like{
+    padding-left: 30px;
+    padding-right: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.heart.heart-active{
+    animation: animacion .8s steps(28) 1;
+    background-position: right;
+}
+
+@keyframes animacion {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+}
+  
+/*boton dislike 1*/
+
+.heartroto-btn-content:active .btn-input{
+    color: #e04141;
+    text-shadow: 2px 2px 3px #972121;
+}
+
+.heartroto-btn{
+    position: relative;
+    top: -20px;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+}
+
+.heartroto-btn-content{
+    padding: 13px 26px;
+    display: flex;
+    border: 2px solid #eae2e1;
+    border-radius: 45px;
+    cursor: pointer;
+    width: 36%;
+    align-items: center;
+}
+
+.heartroto-btn-content.heart_roto-active{
+    border-color: #dfaeb7;
+    background: #ecafb9;
+}
+
+.heartroto{
+    position: absolute;
+    background: url("../img/img.png") no-repeat;
+    background-position: left;
+    background-size: 2900%;
+    height: 80px;
+    width: 90px;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%,-50%);
+}
+
+.dislike{
+    padding-left: 30px;
+    padding-right: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 21px;
+    margin-left: 30px;
+    color: grey;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.text.heart_roto-active{
+    color: #000;
+}
+
+.heartroto.heart_roto-active{
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+}
+
+@keyframes animate {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+}
+
+
+/*imagen y videos pocisiones*/
+.titulo__canciones__contenedor{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagen{
+    width: 15rem;
+    height: 13rem;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.video__derecha{
+    width: 400px; 
+    height: 250px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.video__container{
+    text-align: center;
+    padding: 1rem;
+}
+
+.video{
+    border-radius: 5px;
+    box-shadow: 8px 10px 25px, 10px 9px 10px, -5px -5px 25px;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 920px){
+    .caja__contenedor{
+        width: 750px;
+        border-radius: 50px;
+    }
+
+    .parametro__contenedor {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .parametro__contenedor__contenido--principal {
+        width: 720px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .titulo{
+        margin: auto;
+    }
+
+    .ul__items-ul {
+        margin-right: 1rem;
+    }
+
+    .ul__items-imagen {
+        width: 20rem;
+        height: 15rem;
+        margin-left: 2rem; 
+        border-radius: 25px;
+    }
+
+    .ul__items-nombres--info {
+        margin: 0;
+    }
+
+    /*subcaja de carrera <- titulo*/
+    .contenedor__conimagen--imagen {
+        border-radius: 0 60px 0 60px;
+        width: 685px;
+        height: 1200px;
+        margin: 0 10px;
+    }
+
+    #contenedor__conimagen-parrafo {
+        padding: 10px 45px 15px 20px;
+        left: 15px;
+        letter-spacing: 0.9px;
+    }
+    /*botones*/
+
+    .heart-btn {
+        width: 70%;
+    }
+
+    .heartroto-btn {
+        width: 70%;
+    }
+
+    /*contenido del debut*/
+
+    .parametro__contenedor__contenido-single {
+        margin-left: 10px;
+    }
+
+    .imagen {
+        width: 10rem;
+        height: 10rem;
+        padding-right: 5px;
+        border-radius: 15px;
+    }
+
+    .video__container {
+        padding: 10px 0 0 0;
+    }
+
+    .video__derecha {
+        border-radius: 25px;
+    }
+
+    .video {
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .caja__contenedor{
+        width: 600px;
+        border-radius: 50px;
+    }
+
+    .parametro__contenedor {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .parametro__contenedor__contenido--principal {
+        width: 550px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .ul__items__contenedor {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .ul__items-imagen {
+        margin: 10px 0;
+        width: 30rem;
+        height: 20rem;
+    }
+
+    /*subcaja de carrera <- titulo*/
+    .contenedor__conimagen--imagen {
+        border-radius: 50px;
+        width: 500px;
+        height: 85em;
+        margin: 0 10px;
+    }
+
+    /*botones*/
+
+    .botones__contenedor {
+        display: none;
+    }
+    .heart-btn {
+        display: none;
+    }
+
+    .heartroto-btn {
+        display: none;
+    }
+
+    /*contenido del debut*/
+
+    .imagen {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    #imagennula{
+        display: none;
+    }
+
+    .video__container {
+        padding: 10px 0 0 0;
+    }
+
+    .video__derecha {
+        margin-top: 1em;
+        border-radius: 25px;
+    }
+ 
+    .video {
+        width: 20em;
+        height: 15em;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .caja__contenedor{
+        width: 355px;
+        border-radius: 50px;
+    }
+
+    .parametro__contenedor {
+        width: auto;
+        padding: 10px;
+        padding-bottom: 25px;
+    }
+
+    .parametro__contenedor__contenido--principal {
+        width: auto;
+        padding: 10px;
+    }
+    /*primer bloque BTS-info*/
+    .titulo{
+        font-size: 60px;
+    }
+
+    .titulo__h3 {
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .ul__items__contenedor {
+        flex-wrap: wrap;
+    }
+    .ul__items-ul {
+        margin-right: 0;
+    }
+    .ul__items {
+        margin: 5px auto;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .ul__items-imagen {
+        width: 18rem;
+        height: 15rem;
+        margin-top: 1rem;
+    }
+
+    /*segundo bloque carrera*/
+
+    .contenedor__conimagen--imagen {
+        border-radius: 35px;
+        width: 335px;
+        height: 90em;
+        margin: 0;
+    }
+
+    #contenedor__conimagen-parrafo {
+        padding: 0;
+        left: 9px;
+        letter-spacing: 0;
+    }
+
+    #contenedor__conimagen-parrafo p {
+        font-size: 1rem;
+    }
+    /*botones*/
+
+    .botones__contenedor {
+        display: none;
+    }
+    .heart-btn {
+        display: none;
+    }
+
+    .heartroto-btn {
+        display: none;
+    }
+
+    /*contenido del debut*/
+
+    .parrafo {
+        margin: 5px 15px;
+    }
+
+    .parametro__contenedor__contenido-single {
+        margin-left: 10px;
+    }
+
+    .titulo__canciones__contenedor {
+        flex-wrap: wrap;
+    }
+
+    .imagen {
+        width: 15rem;
+        height: 15rem;
+        padding-right: 0;
+    }
+
+   .video__container {
+        padding: 10px 0 0 0;
+    }
+
+    .video__derecha {
+        margin-top: 1em;
+        border-radius: 25px;
+    }
+ 
+    .video {
+        width: 20em;
+        height: 15em;
+        box-shadow: none;
+    }
+}

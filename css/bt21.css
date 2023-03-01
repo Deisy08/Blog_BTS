@@ -1,0 +1,223 @@
+/* parte de bt21*/
+
+.gif__contenedor--li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: calc(45% - 5rem);
+    text-align: center;
+    border: 2px solid rgb(136 72 187 / 56%);
+    padding: 0.5rem;
+    border-radius: 3rem;
+}
+
+.gif__contenedor--li:hover{
+    border: 2px solid rgb(114, 36, 178);
+    box-shadow: 0px 0px 5px rgb(114, 36, 178);
+}
+
+.ul__items-imagen2{
+    width: 30rem;
+    height: 20rem;
+    margin: 0 20px 15px 15px;
+    border-radius: 10px;
+}
+
+.ul__items-imagen2:hover{
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px rgb(100, 32, 155);
+}
+
+.gif__contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gif__contenedor--nombre{
+    font-family: "monserrat", sans-serif;
+    font-weight: 700;
+}
+
+.gif__imagen{
+    width: 320px;
+    height: 160px;
+}
+
+.parrafo__caracteristicas{
+    font-weight: bold;
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.info__adicional--nombre{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.info__adicional li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin:  1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(114, 36, 178);
+    border-radius: 10px;
+}
+
+.info__adicional li:hover{
+    border: 2px solid rgb(114, 36, 178);
+    box-shadow: 0px 0px 5px rgb(114, 36, 178);
+}
+
+.info__adicional li:active{
+    border: 2px solid rgb(70, 6, 121);
+    box-shadow: 0px 0px 10px rgb(70, 6, 121);
+}
+
+.info__adicional :hover h4{
+    font-size: 20px;
+}
+
+.info__adicional--imagen{
+    width: 250px;
+    height: 250px;
+}
+
+/*subcaja - parte del debut*/
+
+.parrafo{
+    margin: 5px 30px;
+}
+
+.parametro__contenedor__contenido-single{
+    margin: 9px auto;
+    margin-left: 30px;
+    font-size: 25px;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue; 
+    font-weight: 600;  
+}
+
+.parametro__contenedor__contenido-single:before{
+    content: "☾ ";
+}
+
+.titulo__canciones{
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+.lista__canciones li{
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-family: 'PT Serif', serif;
+}
+
+.lista__canciones li:before{
+    content: "⤳"
+}
+
+@media screen and (max-width: 920px){
+
+    .ul__items__contenedor {
+        justify-content: center;
+    }
+
+    .info__adicional--imagen {
+        width: 10em;
+        height: 15rem;
+    }
+
+    .gif__imagen {
+        width: 15em;
+        height: 10em;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .ul__items-imagen:hover {
+        box-shadow: none;
+    }
+
+    .titulo {
+        font-size: 65px;
+    }
+
+    .ul__items-imagen2 {
+        width: 30rem;
+        height: 20rem;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+
+    .ul__items-imagen2:hover{
+        box-shadow: none;
+    }
+
+    .gif__contenedor {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gif__contenedor--li {
+        width: auto; 
+    }
+
+    .gif__imagen {
+        width: 30em;
+        height: 10em;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .ul__items__contenedor {
+        flex-wrap: wrap;
+    }
+
+    .ul__items-imagen {
+        margin: 5px auto;
+    }
+
+    .ul__items-imagen2 {
+        width: 20rem;
+        height: 15rem;
+        margin: 0 20px 0 15px;
+        border-radius: 0;
+    }
+
+    .gif__contenedor {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gif__contenedor--li {
+        width: auto; 
+    }
+
+    .gif__imagen {
+        width: 20em;
+        height: 9em;
+    }
+
+    /*Enlaces extra*/
+
+    .info__adicional{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .info__adicional li{
+        width: auto;
+        border-radius: 80px;
+    }
+
+    .info__adicional--imagen {
+        width: 9rem;
+        height: 9rem;
+    }
+}
