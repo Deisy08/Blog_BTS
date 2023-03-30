@@ -1,5 +1,7 @@
 # Blog_BTS
 ### En este repositório es dedicado a mi pequeña hermanita ya que la gusta BTS &#10084;&#10084;&#10084;.
+
+#### [enlace al blog](https://deisy08.github.io/Blog_BTS/)
 ---
 <p align="center" >
      <img width="600" heigth="300" src="img/captura_home.png">
